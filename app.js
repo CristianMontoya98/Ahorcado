@@ -72,6 +72,8 @@ function comprobarLetra() {
               palabraG.innerHTML = "GANASTE, la palabra es " + palabra;
               contador = 0;
               input__text.setAttribute("maxlength",0);
+              document.getElementById("img7").style.display = "flex";
+              document.getElementById("img" + (vidas)).style.display = "none";
             }
           }
         }
@@ -95,6 +97,7 @@ function comprobarLetra() {
 /* Función para reiniciar todos los valores y que se pueda jugar de nuevo,
 se llama en el botón resetear por medio del evento onclick */
 function resetear() {
+  document.getElementById("img7").style.display = "none";
   document.getElementById("img6").style.display = "flex";
   document.getElementById("img5").style.display = "none";
   document.getElementById("img4").style.display = "none";

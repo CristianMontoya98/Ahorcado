@@ -52,6 +52,7 @@ section{ display: flex; flex-direction: column; align-items: center;
         #img4{display: none;}
         #img5{display: none;}
         #img6{display: flex;}
+        #img7{display: none;}
         
 
     .word{ 
