@@ -70,7 +70,7 @@ function comprobarLetra() {
 
             if (contador == palabra.length) {
               palabraG.innerHTML = "GANASTE, la palabra es " + palabra;
-
+              document.getElementById("input__text").maxlength= "0";
               contador = 0;
             }
           }
@@ -102,6 +102,9 @@ function resetear() {
   document.getElementById("img1").style.display = "none";
   document.getElementById("img0").style.display = "none";
   vidas = 6;
+  palabraG.innerHTML ="";
+  mostrarVidas.innerHTML ="";
+
 
   for (let i = 0; i < palabra.length; i++) {
     let parrafo = document.getElementById("p" + i);
