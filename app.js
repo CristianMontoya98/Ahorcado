@@ -70,8 +70,8 @@ function comprobarLetra() {
 
             if (contador == palabra.length) {
               palabraG.innerHTML = "GANASTE, la palabra es " + palabra;
-              document.getElementById("input__text").maxlength= "0";
               contador = 0;
+              input__text.setAttribute("maxlength",0);
             }
           }
         }
@@ -89,6 +89,7 @@ function comprobarLetra() {
   }
   if (vidas == 0) {
     palabraG.innerHTML = "PERDISTE, la palabra correcta es " + palabra;
+    input__text.setAttribute("maxlength",0);
   }
 }
 /* Función para reiniciar todos los valores y que se pueda jugar de nuevo,
@@ -104,6 +105,7 @@ function resetear() {
   vidas = 6;
   palabraG.innerHTML ="";
   mostrarVidas.innerHTML ="";
+  input__text.setAttribute("maxlength",1)
 
 
   for (let i = 0; i < palabra.length; i++) {
