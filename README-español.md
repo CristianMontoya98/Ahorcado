@@ -42,4 +42,3 @@ _Equipo encargado del desarrollo_
 * **Cristian Montoya** - *Back-end* - [CristianMontoya98](https://github.com/CristianMontoya98)
 
 
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
